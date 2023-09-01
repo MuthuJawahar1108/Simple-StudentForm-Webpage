@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body style="border: 5px solid rebeccapurple; padding:10px; margin: 20px;">
+    <center>
+        <img src="CIT-Logo.png" alt="logo" height="100px" width="100px">
+        <h2 style="color: chocolate;">Coimbatore Institute of Technology</h2>
+    </center>
+    <h4><b>PRELIMINARY DEFINITIONS AND NOMENCLATURE</b></h4>
+    <p>In this Regulation, unless the context specifies otherwise</p>
+    <ol type="a">
+        <li><b>"Programme" </b>means Degree Programme, i.e. B.E. / B.Tech. Degree Programme.</li>
+        <li><b>"Branch" </b>means specialization or discipline of B.E. / B.Tech. Programme like Civil Engineering,  Mechanical Engineering, Chemical Engineering, etc. </li>
+        <li><b>"Course" </b>means a theory or practical subject like Engineering Physics, Calculus and Differential  Equations, Engineering Graphics, etc. that is normally studied in a semester.  </li>
+    </ol>
+    <br>
+    <p><b>Branches Offered</b></p>
+    <ol type="a">
+        <li>B.E Civil Engineering</li>
+        <li>B.E Mechanical Engineering</li>
+        <li>B.E Electrical and Electronics Engineering</li>
+    </ol>
+    <p><b>Tentative Fee Structure</b></p>
+    <center>
+        <table border="1" style="width: 60%; border-collapse: collapse; border-width: 2px; margin: 15px;">
+            <tr>
+                <th>Programme</th>
+                <th>Type</th>
+                <th>Per year fees</th>
+            </tr>
+            <tr>
+                <td>B.E/B.Tech</td>
+                <td>Aided</td>
+                <td>₹32000</td>
+            </tr>
+            <tr>
+                <td>B.E/B.Tech</td>
+                <td>Self Support</td>
+                <td>₹62000</td>
+            </tr>
+            <tr>
+                <td>M.Sc</td>
+                <td>Self Support</td>
+                <td>₹67000</td>
+            </tr>
+            <tr>
+                <td>All branches</td>
+                <td>Management</td>
+                <td>₹70000</td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <center>
+        <h4>APPLICATION FORM</h4>
+    </center>
+    <form action="">
+        <p>
+            <label for="sname">Name : <input type="text" name="sname" id="sname"></label>
+        </p>
+        <p>
+            <label for="year">Academic Year : <input type="text" name="year" id="year"></label>
+        </p>
+        
+        <label>Gender : </label>
+        <label>Male<input type="radio" name="gender" value="male"></label>
+        <label>Female<input type="radio" name="gender" value="female"></label>
+        <label>Others<input type="radio" name="gender" value="others"></label>
+
+        <p>Choose the mode of counselling : </p>
+        <label><input type="checkbox" name="cmode" value="aided">Aided</label><br>
+        <label><input type="checkbox" name="cmode" value="ss">Self Support</label><br>
+        <label><input type="checkbox" name="cmode" value="manage">Management</label>
+
+        <p>Select the category : </p>
+        <select name="category">
+            <option value="oc">OC</option>
+            <option value="bc">BC</option>
+            <option value="mbc">MBC</option>
+            <option value="dnc">DNC</option>
+            <option value="sc">SC</option>
+            <option value="st">ST</option>
+        </select><br>
+
+        <p><label>Counselling Round Number : <input type="number" name="rno" min="1" max="3"></label></p>
+
+        <p>Permanent Address:</p>
+        <textarea name="address" cols="50" rows="6"></textarea>
+
+        <p>
+            <label>Date of birth : <input type="date" name="dob"></label>
+        </p>
+
+        <p>
+            <label>Email : <input type="email" name="mail"></label>
+        </p>
+
+        
+        <label>Upload the Allotment Order :</label>
+        <input type="file" name="allot_order">
+        <input type="button" value="Verify">
+        
+
+        <p>Declaration:</p>
+        <input type="checkbox" name="declaration" value="yes">
+        <textarea name="declaration" cols="60" rows="3">The above details furnished are to the best of my knowledge. I accept all the terms and conditions.</textarea>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+
+    </form>
+</body>
+</html>
